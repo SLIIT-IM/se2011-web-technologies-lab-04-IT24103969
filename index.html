@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">	
+	<title>Campus Tech Store</title>
+	<link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+	<div class="container">
+	<header>
+		<img src="images/logo2.png" alt="Campus Tech Store Logo" width="120" class="logo">
+		<h1>Campus Tech Store</h1>
+		<p>The one-stop shop for all your tech essentials</p>
+		<button id="themeBtn">Toggle Dark Mode</button>
+	</header>
+	
+	<nav>
+		<ul>
+			<li><a href="#home">Home</a>
+			<li><a href="#products">Products</a>
+			<li><a href="#offers">Offers</a>
+			<li><a href="#contact">Contact Us</a>			
+		</ul>
+	</nav>
+	
+	<main>
+		<section id="home">
+			<h2>Welcome!</h2>
+			<img src="images/hero2.jpg" alt="Hero Image" width="400">
+			<br>
+			<button id="welcomeBtn">Click for welcome</button>
+			<p id="welcomeMessage"></p>
+		</section>
+		
+		<section id="products">
+			<h2>Products</h2>
+			
+			<label for="searchInput">Search Product: </label><br>
+			<input type="text" id="searchInput" placeholder="Type product name"><br><br>
+			<button id="searchBtn">Search</button>
+			
+			<table class="product-table" id="productTable">
+				<tr>
+					<th>Product Name</th>
+					<th>Description</th>
+					<th>Price(Rs.)</th>
+				</tr>
+				<tr>
+					<td>Laptop</td>
+					<td>Essential item for completing assignments and online lectures</td>
+					<td>20,000</td>					
+				</tr>
+					<td>Wireless Mouse</td>
+					<td>Hassle free and easy to use. Good accessory for a laptop</td>
+					<td>1,500</td>
+				</tr>
+				<tr>
+					<td>USB flash drive</td>
+					<td>For storage and transfer of files</td>
+					<td>2,000</td>
+				</tr>
+			</table>
+			<label for="priceInput">Enter Product Price: </label><br>
+			<input type="number" id="priceInput" placeholder="Enter price"><br><br>
+			
+			<button id="discountBtn">Discount Button</button>
+			<p id="discountResult"></p>
+		</section>
+		
+		<section id="offers">
+			<h2>Offers</h2>
+			<p>The following offers are provided and reserved for university students:</p>
+			<ol>
+				<li>20% discount for first-year students</li>
+				<li>free delivery within campus</li>
+				<li>free laptop bag with select items</li>				
+			</ol>
+		</section>
+		
+		<section id="contact">
+			<h2>Contact Us</h2>
+			<p>Leave a message using the form below</p>
+			<form class="contact-form" id="contactForm">
+				<label for="fullname">Full Name: </label><br>
+				<input type="text" id="fullname" name="fullname"><br><br>
+				
+				<label for="email">Email: </label><br>
+				<input type="text" id="email" name="email"><br><br>
+				
+				<label for="fullname">Message: </label><br>
+				<textarea id="message" name="message" rows="5" cols="30"></textarea><br><br>
+				
+				<input type="submit" value="Send Message">
+				<p id="formMessage"></p>
+			</form>
+		</section>
+	</main>
+	
+	<footer>
+		<p>&copy; 2026 Campus Tech Store. All rights reserved.</p>
+		<p>Designed for SE2011 HTML Lab 04</p>
+		<p><a href="https://www.w3schools.com/" target="_blank">Visit W3School</p>
+	</footer>
+
+<script src = "js/script.js"></script>
+
+</body>
+</html>
